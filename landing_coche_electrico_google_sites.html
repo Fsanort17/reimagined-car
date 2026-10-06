@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Coche eléctrico | ¿Qué es y cuál me compro?</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#0f172a;background:#f8fafc;line-height:1.6}
+.wrap{width:min(1100px,92%);margin:auto}
+.hero{min-height:620px;padding:90px 0 70px;color:#fff;background:linear-gradient(110deg,rgba(2,6,23,.93),rgba(15,118,110,.78)),url("https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1800&q=85") center/cover;display:flex;align-items:center}
+.badge{display:inline-block;padding:8px 15px;border-radius:99px;background:rgba(34,197,94,.18);border:1px solid rgba(134,239,172,.5);color:#bbf7d0;font-weight:700;font-size:14px;margin-bottom:20px}
+h1{font-size:clamp(42px,7vw,76px);line-height:.98;letter-spacing:-3px;max-width:800px;margin-bottom:25px}
+.hero p{font-size:19px;color:#e2e8f0;max-width:700px;margin-bottom:30px}
+.btn{display:inline-block;padding:14px 23px;border-radius:12px;background:#16a34a;color:#fff;text-decoration:none;font-weight:700;margin-right:8px}
+.btn.light{background:#fff;color:#15803d}
+section{padding:75px 0}
+.intro{background:#fff}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.photo{border-radius:20px;overflow:hidden;box-shadow:0 15px 40px rgba(15,23,42,.12)}
+.photo img{width:100%;height:390px;object-fit:cover;display:block}
+.kicker{color:#16a34a;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-1.5px;margin:9px 0 15px}
+.muted{color:#64748b}
+.note{border-left:4px solid #16a34a;background:#f0fdf4;padding:17px 20px;margin-top:22px;border-radius:0 12px 12px 0}
+.gray{background:#f1f5f9}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:35px}
+.card{background:#fff;padding:24px 20px;border-radius:18px;border:1px solid #e2e8f0;box-shadow:0 8px 25px rgba(15,23,42,.05)}
+.icon{font-size:27px;margin-bottom:12px}
+.card h3{margin-bottom:6px}
+.card p{color:#64748b;font-size:14px}
+.parts{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:35px}
+.part{background:#fff;padding:22px 16px;border:1px solid #e2e8f0;border-radius:15px}
+.part strong{display:block;margin-bottom:6px}
+.part p{font-size:13px;color:#64748b}
+.mg4{background:linear-gradient(120deg,#052e16,#064e3b);color:#fff}
+.mg4 .muted{color:#cbd5e1}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}
+.spec{padding:16px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.13);border-radius:13px}
+.spec small{display:block;color:#a7f3d0}
+.price{margin-top:10px}.price b{font-size:25px;color:#86efac}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 15px 40px rgba(15,23,42,.1);margin-top:30px}
+th,td{padding:17px;text-align:left;border-bottom:1px solid #e2e8f0}
+th{background:#0f172a;color:#fff}
+.good{color:#15803d;font-weight:700}.warn{color:#b45309;font-weight:700}
+.green{background:#ecfdf5}
+ul{list-style:none;margin-top:20px}
+li{padding:11px 0 11px 31px;border-bottom:1px solid #bbf7d0;position:relative}
+li:before{content:"✓";position:absolute;left:0;color:#16a34a;font-weight:900}
+.cta{background:linear-gradient(120deg,#15803d,#065f46);color:#fff;text-align:center;padding:85px 0}
+.cta p{max-width:700px;margin:15px auto 28px;color:#dcfce7}
+footer{background:#020617;color:#94a3b8;text-align:center;padding:28px 0;font-size:14px}
+footer b{color:#fff}
+@media(max-width:850px){.grid2{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.parts{grid-template-columns:1fr 1fr}.mg4 .grid2{display:flex;flex-direction:column-reverse}}
+@media(max-width:600px){section{padding:55px 0}.cards,.parts,.specs{grid-template-columns:1fr}h1{letter-spacing:-2px}.photo img{height:300px}table{font-size:13px}th,td{padding:11px 8px}.hero{min-height:600px}}
+</style>
+</head>
+<body>
+
+<section class="hero" id="inicio">
+<div class="wrap">
+<span class="badge">MOVILIDAD ELÉCTRICA</span>
+<h1>¿Qué es un coche eléctrico y cuál me compro?</h1>
+<p>Descubre cómo funciona un vehículo eléctrico, sus componentes principales y las prestaciones del MG4, además de sus diferencias frente a un coche de gasolina.</p>
+<a class="btn" href="#mg4">Conocer el MG4 →</a>
+<a class="btn light" href="#funcionamiento">Cómo funciona</a>
+</div>
+</section>
+
+<section class="intro">
+<div class="wrap grid2">
+<div class="photo"><img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=1000&q=85" alt="Coche eléctrico"></div>
+<div>
+<span class="kicker">La idea principal</span>
+<h2>Una forma diferente de moverse</h2>
+<p class="muted">Un coche eléctrico funciona gracias a la electricidad almacenada en una batería. Esta energía proporciona potencia al motor eléctrico, que la transforma en movimiento.</p>
+<div class="note"><b>En pocas palabras:</b><br>🔋 batería → ⚡ electricidad → ⚙️ motor → 🚗 movimiento.</div>
+</div>
+</div>
+</section>
+
+<section class="gray" id="funcionamiento">
+<div class="wrap">
+<span class="kicker">Conceptos básicos</span>
+<h2>La electricidad que mueve el coche</h2>
+<p class="muted">Estos son los conceptos fundamentales para entender cómo funciona un vehículo eléctrico.</p>
+<div class="cards">
+<div class="card"><div class="icon">⚡</div><h3>Voltios (V)</h3><p>Tensión eléctrica.</p></div>
+<div class="card"><div class="icon">🔌</div><h3>Amperios (A)</h3><p>Cantidad de corriente.</p></div>
+<div class="card"><div class="icon">💡</div><h3>Vatios (W)</h3><p>Potencia eléctrica.</p></div>
+<div class="card"><div class="icon">🔋</div><h3>kWh</h3><p>Cantidad de energía que puede almacenar la batería.</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<span class="kicker">Dentro del vehículo</span>
+<h2>Las piezas que hacen posible el movimiento</h2>
+<div class="parts">
+<div class="part"><strong>🔋 Batería</strong><p>Almacena la electricidad.</p></div>
+<div class="part"><strong>⚙️ Motor eléctrico</strong><p>Transforma electricidad en movimiento.</p></div>
+<div class="part"><strong>🔄 Inversor</strong><p>Controla la electricidad que llega al motor.</p></div>
+<div class="part"><strong>🔌 Cargador</strong><p>Permite cargar la batería.</p></div>
+<div class="part"><strong>♻️ Frenada regenerativa</strong><p>Recupera parte de la energía al frenar.</p></div>
+</div>
+</div>
+</section>
+
+<section class="mg4" id="mg4">
+<div class="wrap grid2">
+<div>
+<span class="kicker">El modelo elegido</span>
+<h2>MG4: eléctrico, práctico y potente</h2>
+<p class="muted">El MG4 es el coche elegido en el trabajo como ejemplo. Estas son las prestaciones indicadas en el documento.</p>
+<p class="price">Precio aproximado: <b>28.000–34.000 €</b></p>
+<div class="specs">
+<div class="spec"><small>Potencia</small><b>204 CV</b></div>
+<div class="spec"><small>Autonomía</small><b>Hasta 450 km</b></div>
+<div class="spec"><small>Velocidad máxima</small><b>180 km/h</b></div>
+<div class="spec"><small>Consumo</small><b>18 kWh/100 km</b></div>
+<div class="spec"><small>0–100 km/h</small><b>7,5 segundos</b></div>
+</div>
+</div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1100&q=85" alt="Vehículo eléctrico"></div>
+</div>
+</section>
+
+<section id="comparacion">
+<div class="wrap">
+<span class="kicker">Eléctrico vs gasolina</span>
+<h2>¿Qué cambia realmente?</h2>
+<p class="muted">El documento destaca ventajas e inconvenientes de cada tipo de vehículo.</p>
+<table>
+<thead><tr><th>Aspecto</th><th>🚗 Eléctrico</th><th>⛽ Gasolina</th></tr></thead>
+<tbody>
+<tr><td>Fuente de energía</td><td class="good">Electricidad</td><td>Combustible</td></tr>
+<tr><td>Gases por el tubo de escape</td><td class="good">No produce</td><td class="warn">Sí produce</td></tr>
+<tr><td>Ruido</td><td class="good">Menor</td><td>Mayor</td></tr>
+<tr><td>Mantenimiento</td><td class="good">Menos piezas móviles</td><td>Mayor mantenimiento</td></tr>
+<tr><td>Autonomía</td><td class="warn">Generalmente menor</td><td class="good">Generalmente mayor</td></tr>
+<tr><td>Repostaje / carga</td><td class="warn">Necesita más tiempo para cargar</td><td class="good">Repostaje más rápido</td></tr>
+<tr><td>Contaminación durante el uso</td><td class="good">Menor</td><td>Mayor</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="green" id="medioambiente">
+<div class="wrap grid2">
+<div>
+<span class="kicker">Medio ambiente</span>
+<h2>Menos emisiones durante su uso</h2>
+<p class="muted">Los coches eléctricos no producen gases por el tubo de escape, aunque la fabricación de sus baterías también genera contaminación y utiliza materias primas.</p>
+<ul>
+<li>No producen gases por el tubo de escape.</li>
+<li>Contaminan menos en las ciudades durante su uso.</li>
+<li>La fabricación de baterías tiene impacto ambiental.</li>
+<li>Utilizan materias primas para fabricar las baterías.</li>
+<li>Durante toda su vida útil suelen producir menos emisiones de gases de efecto invernadero que uno de gasolina o diésel.</li>
+</ul>
+</div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1100&q=85" alt="Naturaleza y movilidad sostenible"></div>
+</div>
+</section>
+
+<section class="cta">
+<div class="wrap">
+<span class="badge">CONCLUSIÓN</span>
+<h2>¿Es el coche eléctrico adecuado para ti?</h2>
+<p>Es una alternativa eficiente y menos contaminante durante su uso. Sus principales inconvenientes son el precio, la autonomía y el tiempo necesario para cargar la batería.</p>
+<a class="btn light" href="#inicio">Volver al inicio ↑</a>
+</div>
+</section>
+
+<footer><div class="wrap"><p><b>eMotion</b> · Movilidad eléctrica</p><p>Contenido adaptado del trabajo sobre coches eléctricos.</p></div></footer>
+
+</body>
+</html>
